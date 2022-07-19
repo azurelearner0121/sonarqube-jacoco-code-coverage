@@ -1,5 +1,5 @@
 pipeline {
-    agent ('dev-agent')
+    agent { label 'dev-agent'}
     stages {
    stage('Clone sources') {
             steps {
