@@ -1,9 +1,9 @@
 pipeline {
-    agent any
+    agent ('dev-agent')
     stages {
-        stage('Clone sources') {
+   stage('Clone sources') {
             steps {
-                git url: 'https://github.com/tkgregory/sonarqube-jacoco-code-coverage.git'
+                git url: 'https://github.com/azurelearner0121/sonarqube-jacoco-code-coverage.git'
             }
         }
         stage('SonarQube analysis') {
